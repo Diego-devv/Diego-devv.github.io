@@ -16,7 +16,6 @@
 
 html{
 	font-size: 60%;
-	overflow-x: hidden;
 }
 
 body{
@@ -60,11 +59,6 @@ body{
 
 .navbar a:hover,
 .navbar a.active{ /* barra attiva */
-	border-bottom: 3px solid transparent;
-}
-
-.navbar a:hover,
-.navbar a.active{
 	color: var(--main-color);
 	border-bottom: 3px solid var(--main-color);
 }
@@ -85,7 +79,7 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+	flex-direction: column; /* Serve a disporre gli elementi verticalmene o orizzontalmente*/
 	gap: 1rem; /* Spazio tra gli elementi */
 }
 
@@ -93,7 +87,7 @@ section{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column; /* Serve a disporre gli elementi verticalmene o orizzontalmente*/
+	flex-direction: column; 
 	text-align: center;
 	margin-top: 4rem;
 }
@@ -161,22 +155,4 @@ span{
 	background-color: var(--main-color)
 }
 
-.btn{
-	display: inline-block;
-	padding: 1rem 3rem;
-	background: var(--main-color);
-	border-radius: 4rem;
-	font-size: 1.5rem;
-	color: white;
-	border: 2px solid transparent;
-	letter-spacing: 0.2rem;
-	font-weight: 500;
-	transition: 0.2s ease-in-out;
-	cursor: pointer;
-}
-
-.btn:hover{
-	transform: scale(1);
-	box-shadow: 0 0 25px var(--main-color);
-}
 
