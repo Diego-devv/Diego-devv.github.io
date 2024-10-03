@@ -1,32 +1,48 @@
 <html>
 	<head>
 		<!-- Configurazione della pagina -->
-		<title>TITOLO</title>
-		<style>
-			body {
-				background-color:000814;
-			}
-			
-			header {
-				color:ffc300;
-			}
-			
-			.pcopy {
-				color:white;
-			}
-		</style>
+		<title>Personal Portofolio</title>
+		<link rel="stylesheet" href="stile.css">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	</head>
 	<body>
 		<!-- Elementi da visualizzare -->
-		<header>
+		<header class="header">
 			<!-- Intestazione -->
-			<h1>Diego De Carlo</h1>
+			<a href="#home" class="logo">Diego
+			<span>De Carlo</span>
+			
+			<i class='bx bx-menu' id="icona-menu"></i>
+			
+			<nav class="navbar"> <!-- nav è utilizzata per raggruppare gli elementi di navigazione -->
+				<a href="#home" class="active">Home</a> <!-- Href serve per aggiungere collegamenti o link -->
+				<a href="#about">About</a>
+				<a href="#contatta">Contatta</a>
+			</nav>
 		</header>
-		<main>
-			<!-- Parte principale -->
-			
-			
-		</main>
+		
+		<section class="home" id="home">
+			<div class="diego-img">
+				<img src="diego.jpg">
+			</div>
+				
+			<div class="contenuto-home">
+				<h1>Qui <span>Diego</span></h1>
+				
+				<p>Sono un appassionato junior developer con un forte 
+				interesse per il mondo dei videogiochi. 
+				Il mio sogno è diventare un video editor, 
+				dove posso unire le mie competenze tecniche e 
+				la mia passione per le storie visive. 
+				Desidero imparare a montare video in modo professionale, 
+				creando contenuti che intrattengano e ispirino.
+				</p>
+				
+				<div class="icone-social">
+					<a href="https://www.instagram.com/diego.decarloo/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+					<a href="https://github.com/Diego-devv" target="_blank"><i class='bx bxl-github'></i></a>
+					<a href="https://www.twitch.tv/diegoocasta" target="_blank"><i class='bx bxl-twitch'></i></a>
+				</div>
 		<footer>
 			<!-- Piè di pagina -->
 			<p class="pcopy">&copy; Diego De Carlo</p>
